@@ -4,62 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+    <title>Registration Page</title>
 </head>
 
 <body>
-    <h1>Registration Form</h1>
-    <form>
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
-        <br>
-        <br>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <br><br>
-        <label for="gender">Gender</label>
-        <select name="gender" id="gender">
-            <option value="q1">Male</option>
-            <option value="q2">Female</option>
-        </select>
-        <br><br>
+    <header>
+        <img class=logo1 src="img/logo1.svg" alt="logo image">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+        <a class="contact" href="#"><button>Contact</button></a>
+    </header>
 
-        <label for="address">Address</label><br>
-        <textarea name="address" id="address" cols="90" rows="1" placeholder="Enter your full address"></textarea>
-        <br><br>
-        <label for="birthday">Birthday</label>
-        <input type="date" id="birthday">
-        <br><br>
-        <div>
-            <label for="qraduation">Graduation in</label>
-            <select name="graduation" id="graduation">
-                <option selected disabled>Select</option>
-                <option value="q1">Btech</option>
-                <option value="q2">BCA</option>
-                <option value="q3">BA</option>
-                <option value="q4">Others</option>
-            </select>
+
+    <div class="main">
+        <div class="container">
+            <h1>Registration Form</h1>
+        </div>
+        <div class="formcontainer">
+            <form>
+                <label class="formname" for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+                <br>
+                <br>
+                <label class="formname" for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+                <br><br>
+                <label class="formname" for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="q1">Male</option>
+                    <option value="q2">Female</option>
+                </select>
+                <br><br>
+
+                <label class="formname" for="address">Address</label><br>
+                <textarea class="address" name="address" id="address" cols="50" rows="1"
+                    placeholder="Enter your full address"></textarea>
+                <br><br>
+                <label class="formname" for="birthday">Birthday</label>
+                <input type="date" id="birthday">
+                <br><br>
+                <div>
+                    <label class="formname" for="qraduation">Education Qualification</label>
+                    <select name="graduation" id="graduation">
+                        <option selected disabled>Select</option>
+                        <option value="q1">Btech</option>
+                        <option value="q2">BCA</option>
+                        <option value="q3">BA</option>
+                        <option value="q4">Others</option>
+                    </select>
+                </div>
+
+                <br><br>
+                <label class="formname" class="technology" for="technology">Technology Known</label>
+                <input type="checkbox" id="tech1" value="C">
+                <label for="tech1">C</label>
+                <input type="checkbox" id="tech2" value="C++">
+                <label for="tech2">C++</label>
+                <input type="checkbox" id="tech3" value="Java">
+                <label for="tech3">Java</label>
+                <input type="checkbox" id="tech4" value="Javascript">
+                <label for="tech4">Javascript</label>
+                <input type="checkbox" id="tech5" value="Python">
+                <label for="tech5">Python</label>
+
+
+            </form>
         </div>
 
-        <br><br>
-        <label for="technology">Technology Known</label>
-        <input type="checkbox" id="tech1" value="C">
-        <label for="tech1">C</label>
-        <input type="checkbox" id="tech2" value="C++">
-        <label for="tech2">C++</label>
-        <input type="checkbox" id="tech3" value="Java">
-        <label for="tech3">Java</label>
-        <input type="checkbox" id="tech4" value="Javascript">
-        <label for="tech4">Javascript</label>
-        <input type="checkbox" id="tech5" value="Python">
-        <label for="tech5">Python</label>
-
-    </form>
-    <div>
-        <button type="submit" value="submit">Submit</button>
-        <button type="reset" value="reset">Reset</button>
+        <button class="buttonform" type="submit" value="submit">Submit</button>
+        <button class="buttonform" type="reset" value="reset">Reset</button>
     </div>
-
+    </section>
+    </main>
+    <footer class="main-footer">
+        <nav>
+            <ul class="main-footer__links">
+                <li class="main-footer__link">
+                    <a href="#">Support</a>
+                </li>
+                <li class="main-footer__link">
+                    <a href="#">Terms of Use</a>
+                </li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 
 </html>
